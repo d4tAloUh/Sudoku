@@ -91,19 +91,9 @@ public class Sudoku {
     }
 
     private static boolean isValid(char[][] board, int row, int column) {
-<<<<<<< HEAD
-        return 		rowRestiction(board, row) 
+        return rowRestiction(board, row) 
 		&& squareRestriction(board, row, column)
                 && columnRestiction(board, column);
-||||||| merged common ancestors
-        return squareRestriction(board, row, column)
-		&&  rowRestiction(board, row)
-                && columnRestiction(board, column);
-=======
-        return columnRestiction(board, column)
-		&&  squareRestriction(board, row, column)
-                && rowRestiction(board, row);
->>>>>>> 66a5c394c06ebe42a40bf5c2fe0efb4d22a224a9
 
     }
 
