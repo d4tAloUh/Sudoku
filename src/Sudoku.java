@@ -91,9 +91,9 @@ public class Sudoku {
     }
 
     private static boolean isValid(char[][] board, int row, int column) {
-        return squareRestriction(board, row, column)
-		&&  rowRestiction(board, row)
-                && columnRestiction(board, column);
+        return columnRestiction(board, column)
+		&&  squareRestriction(board, row, column)
+                && rowRestiction(board, row);
 
     }
 
